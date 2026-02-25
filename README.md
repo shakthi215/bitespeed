@@ -4,10 +4,7 @@ Backend service for the Bitespeed assessment task: reconcile customer identities
 
 ## Live API
 
-- `POST https://bitespeed-ewvs.onrender.com/identify`
-
-Example:
-- `POST https://bitespeed-ewvs.onrender.com/identify`
+- `https://bitespeed-ewvs.onrender.com/identify`
 
 ## Tech Stack
 
@@ -116,21 +113,3 @@ curl -X POST http://localhost:3000/identify \
   -H "Content-Type: application/json" \
   -d "{\"email\":\"emmett@hillvalley.edu\",\"phoneNumber\":\"88888\"}"
 ```
-
-## Deployment (Render)
-
-1. Push code to GitHub.
-2. Create a new Web Service on Render.
-3. Use:
-   - Build Command: `npm install && npm run build`
-   - Start Command: `npm start`
-4. Deploy and copy your domain.
-5. Update **Live API** section with your final endpoint.
-
-## Submission Checklist
-
-- GitHub repository link
-- Deployed endpoint (`/identify`)
-- README updated with live URL
-- JSON request/response examples included
-
